@@ -1,0 +1,893 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.11-1.12.2.jar)
+  iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+Contact their authors BEFORE contacting forge
+
+// My bad.
+
+Time: 20/02/21 21:48
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60,00 seconds (should be max 0.05)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_177229_b(BlockStateContainer.java:205)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:493)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:107)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:493)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:107)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:494)
+	at net.minecraft.world.World.func_175722_b(World.java:440)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:381)
+	at net.minecraft.world.World.func_180501_a(World.java:361)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:497)
+	at net.minecraft.world.World.func_175722_b(World.java:440)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:381)
+	at net.minecraft.world.World.func_180501_a(World.java:361)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:129)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:129)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.World.func_189507_a(World.java:2682)
+	at net.minecraft.world.gen.feature.WorldGenLiquids.func_180709_b(WorldGenLiquids.java:88)
+	at net.minecraft.world.biome.BiomeDecorator.func_150513_a(BiomeDecorator.java:352)
+	at net.minecraft.world.biome.BiomeDecorator.func_180292_a(BiomeDecorator.java:88)
+	at net.minecraft.world.biome.Biome.func_180624_a(Biome.java:225)
+	at net.minecraft.world.biome.BiomePlains.func_180624_a(BiomePlains.java:106)
+	at net.minecraft.world.gen.ChunkGeneratorOverworld.func_185931_b(ChunkGeneratorOverworld.java:464)
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1019)
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:985)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157)
+	at net.minecraft.world.World.func_72964_e(World.java:310)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.isAverageHeightWithin(TownPlacementValidator.java:223)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.tryExpandZNeg(TownPlacementValidator.java:203)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.expandBoundingArea(TownPlacementValidator.java:168)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.findGenerationPosition(TownPlacementValidator.java:65)
+	at net.shadowmage.ancientwarfare.structure.town.WorldTownGenerator.attemptGeneration(WorldTownGenerator.java:48)
+	at net.shadowmage.ancientwarfare.structure.worldgen.WorldGenTickHandler.genTowns(WorldGenTickHandler.java:94)
+	at net.shadowmage.ancientwarfare.structure.worldgen.WorldGenTickHandler.serverTick(WorldGenTickHandler.java:58)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_281_WorldGenTickHandler_serverTick_ServerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostServerTick(FMLCommonHandler.java:266)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:712)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_177229_b(BlockStateContainer.java:205)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:493)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:107)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:493)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:107)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:494)
+	at net.minecraft.world.World.func_175722_b(World.java:440)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:381)
+	at net.minecraft.world.World.func_180501_a(World.java:361)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:497)
+	at net.minecraft.world.World.func_175722_b(World.java:440)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:381)
+	at net.minecraft.world.World.func_180501_a(World.java:361)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:129)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:129)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.World.func_189507_a(World.java:2682)
+	at net.minecraft.world.gen.feature.WorldGenLiquids.func_180709_b(WorldGenLiquids.java:88)
+	at net.minecraft.world.biome.BiomeDecorator.func_150513_a(BiomeDecorator.java:352)
+	at net.minecraft.world.biome.BiomeDecorator.func_180292_a(BiomeDecorator.java:88)
+	at net.minecraft.world.biome.Biome.func_180624_a(Biome.java:225)
+	at net.minecraft.world.biome.BiomePlains.func_180624_a(BiomePlains.java:106)
+	at net.minecraft.world.gen.ChunkGeneratorOverworld.func_185931_b(ChunkGeneratorOverworld.java:464)
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1019)
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:985)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157)
+	at net.minecraft.world.World.func_72964_e(World.java:310)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.isAverageHeightWithin(TownPlacementValidator.java:223)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.tryExpandZNeg(TownPlacementValidator.java:203)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.expandBoundingArea(TownPlacementValidator.java:168)
+	at net.shadowmage.ancientwarfare.structure.town.TownPlacementValidator.findGenerationPosition(TownPlacementValidator.java:65)
+	at net.shadowmage.ancientwarfare.structure.town.WorldTownGenerator.attemptGeneration(WorldTownGenerator.java:48)
+	at net.shadowmage.ancientwarfare.structure.worldgen.WorldGenTickHandler.genTowns(WorldGenTickHandler.java:94)
+	at net.shadowmage.ancientwarfare.structure.worldgen.WorldGenTickHandler.serverTick(WorldGenTickHandler.java:58)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_281_WorldGenTickHandler_serverTick_ServerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostServerTick(FMLCommonHandler.java:266)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:712)
+
+-- Thread Dump --
+Details:
+	Threads: "Netty Server IO #7" Id=43 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@1282d18e
+	-  locked java.util.Collections$UnmodifiableSet@1c452dae
+	-  locked sun.nio.ch.WindowsSelectorImpl@187abafe
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #6" Id=42 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@5d782795
+	-  locked java.util.Collections$UnmodifiableSet@59729315
+	-  locked sun.nio.ch.WindowsSelectorImpl@6ceffdc8
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #5" Id=41 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@210f17e1
+	-  locked java.util.Collections$UnmodifiableSet@3d57d8da
+	-  locked sun.nio.ch.WindowsSelectorImpl@70f00e5e
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #4" Id=40 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@63e2bc35
+	-  locked java.util.Collections$UnmodifiableSet@3a0b1fb7
+	-  locked sun.nio.ch.WindowsSelectorImpl@39198124
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #3" Id=39 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@496beaa7
+	-  locked java.util.Collections$UnmodifiableSet@3f1ef4ab
+	-  locked sun.nio.ch.WindowsSelectorImpl@5d8aa258
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Chunk I/O Executor Thread-1" Id=38 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@28ef186c
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@28ef186c
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #2" Id=37 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@3ec7f104
+	-  locked java.util.Collections$UnmodifiableSet@76b4e1db
+	-  locked sun.nio.ch.WindowsSelectorImpl@7e240537
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"threadDeathWatcher-2-1" Id=36 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at io.netty.util.ThreadDeathWatcher$Watcher.run(ThreadDeathWatcher.java:152)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #1" Id=35 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@2e584ee7
+	-  locked java.util.Collections$UnmodifiableSet@2f16c5f9
+	-  locked sun.nio.ch.WindowsSelectorImpl@7efd53f9
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"File IO Thread" Id=33 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.world.storage.ThreadedFileIOBase.func_75736_b(SourceFile:51)
+	at net.minecraft.world.storage.ThreadedFileIOBase.run(SourceFile:30)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Java2D Disposer" Id=31 WAITING on java.lang.ref.ReferenceQueue$Lock@202efcac
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@202efcac
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at sun.java2d.Disposer.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Server Watchdog" Id=29 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:45)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #0" Id=27 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@4c6da138
+	-  locked java.util.Collections$UnmodifiableSet@554d9c41
+	-  locked sun.nio.ch.WindowsSelectorImpl@413b6f8a
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Server console handler" Id=20 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@16a7309d
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@37e23710
+	at java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"DestroyJavaVM" Id=19 RUNNABLE
+
+
+"Server thread" Id=17 RUNNABLE
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_177229_b(BlockStateContainer.java:205)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:493)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:107)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	...
+
+
+"Server Infinisleeper" Id=16 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:82)
+
+
+"Snooper Timer" Id=15 TIMED_WAITING on java.util.TaskQueue@e740a39
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@e740a39
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"Attach Listener" Id=5 RUNNABLE
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@14a97342
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@14a97342
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@3ba59a92
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@3ba59a92
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:62)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_281, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 426369848 bytes (406 MB) / 3035627520 bytes (2895 MB) up to 3035627520 bytes (2895 MB)
+	JVM Flags: 2 total; -Xmx3072M -Xms3072M
+	IntCache: cache: 12, tcache: 94, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2854 38 mods loaded, 38 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                       | Version                  | Source                                          | Signature                                |
+	|:------ |:------------------------ |:------------------------ |:----------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft                | 1.12.2                   | minecraft.jar                                   | None                                     |
+	| LCHIJA | mcp                      | 9.42                     | minecraft.jar                                   | None                                     |
+	| LCHIJA | FML                      | 8.0.99.99                | forge-1.12.2-14.23.5.2854-universal.jar         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge                    | 14.23.5.2854             | forge-1.12.2-14.23.5.2854-universal.jar         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | foamfixcore              | 7.7.4                    | minecraft.jar                                   | None                                     |
+	| LCHIJA | codechickenlib           | 3.2.3.358                | CodeChickenLib-1.12.2-3.2.3.358-universal.jar   | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJA | ancientwarfare           | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJA | ancientwarfareautomation | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJA | ancientwarfarenpc        | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJA | ancientwarfarestructure  | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJA | ancientwarfarevehicle    | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJA | antiqueatlas             | 4.6.3                    | antiqueatlas-1.12.2-4.6.3.jar                   | None                                     |
+	| LCHIJA | waystones                | 4.1.0                    | Waystones_1.12.2-4.1.0.jar                      | None                                     |
+	| LCHIJA | atlasextras              | 1.8                      | AtlasExtras-1.12.2-1.8.jar                      | None                                     |
+	| LCHIJA | am                       | 1.0                      | Avatar+Armory+Mod+v1.1.3.jar                    | None                                     |
+	| LCHIJA | baubles                  | 1.5.2                    | Baubles-1.12-1.5.2.jar                          | None                                     |
+	| LCHIJA | betterbuilderswands      | 0.11.1                   | BetterBuildersWands-1.12-0.11.1.245+69d0d70.jar | None                                     |
+	| LCHIJA | bountifulbaubles         | 0.0.1                    | Bountiful+Baubles-1.12.2-0.1.5.jar              | None                                     |
+	| LCHIJA | jei                      | 4.16.1.301               | jei_1.12.2-4.16.1.301.jar                       | None                                     |
+	| LCHIJA | chisel                   | MC1.12.2-1.0.2.45        | Chisel-MC1.12.2-1.0.2.45.jar                    | None                                     |
+	| LCHIJA | clumps                   | 3.1.2                    | Clumps-3.1.2.jar                                | None                                     |
+	| LCHIJA | cosmeticarmorreworked    | 1.12.2-v5a               | CosmeticArmorReworked-1.12.2-v5a.jar            | aaaf83332a11df02406e9f266b1b65c1306f0f76 |
+	| LCHIJA | ebwizardry               | 4.3.4                    | ElectroblobsWizardry-4.3.4-MC1.12.2.jar         | None                                     |
+	| LCHIJA | foamfix                  | 0.10.11-1.12.2           | foamfix-0.10.11-1.12.2.jar                      | None                                     |
+	| LCHIJA | grapplemod               | 1.12.2-v11.1             | grapplemod-v11.1-1.12.2.jar                     | None                                     |
+	| LCHIJA | llibrary                 | 1.7.20                   | llibrary-1.7.20-1.12.2.jar                      | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| LCHIJA | iceandfire               | 1.9.1                    | iceandfire-1.9.1-1.12.2.jar                     | None                                     |
+	| LCHIJA | infernalmobs             | 1.7.6                    | InfernalMobs-1.12.2.jar                         | None                                     |
+	| LCHIJA | inventorytweaks          | 1.63+release.109.220f184 | InventoryTweaks-1.63.jar                        | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+	| LCHIJA | lunatriuscore            | 1.2.0.42                 | LunatriusCore-1.12.2-1.2.0.42-universal.jar     | None                                     |
+	| LCHIJA | mowziesmobs              | 1.5.6                    | mowziesmobs-1.5.6.jar                           | None                                     |
+	| LCHIJA | multimob                 | 1.0.5                    | multimob-1.0.5.jar                              | None                                     |
+	| LCHIJA | potioncore               | 1.9_for_1.12.2           | PotionCore-1.9_for_1.12.2.jar                   | None                                     |
+	| LCHIJA | primitivemobs            | 1.2.3a                   | primitivemobs-1.2.3a.jar                        | None                                     |
+	| LCHIJA | qualitytools             | 1.0.7_for_1.12.2         | QualityTools-1.0.7_for_1.12.2.jar               | None                                     |
+	| LCHIJA | schematica               | 1.8.0.169                | Schematica-1.12.2-1.8.0.169-universal.jar       | None                                     |
+	| LCHIJA | stg                      | 1.12.2-1.2.3             | stg-1.12.2-1.2.3.jar                            | None                                     |
+	| LCHIJA | travelersbackpack        | 1.0.35                   | TravelersBackpack-1.12.2-1.0.35.jar             | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  invtweaks.forge.asm.ContainerTransformer
+LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  lumien.resourceloader.asm.ClassTransformer
+Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.11-1.12.2.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  com.github.alexthe666.iceandfire.patcher.IceAndFireRuntimePatcher
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+	Profiler Position: N/A (disabled)
+	Player Count: 2 / 20; [EntityPlayerMP['Otakiinho'/9925481, l='Server', x=575,84, y=68,94, z=-495,02], EntityPlayerMP['iNvAlId'/10929048, l='Server', x=609,34, y=103,00, z=-60,31]]
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,148 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.11-1.12.2.jar)
+  iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  TLSkinCapeHookLoader (tlskincape_1.12.2-1.4.jar)
+Contact their authors BEFORE contacting forge
+
+// You're mean.
+
+Time: 20/02/21 12:05
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from TLSkinCape (tlauncher_custom_cape_skin)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft
+	at org.tlauncher.skin.cape.util.PreparedProfileManager.<init>(PreparedProfileManager.java:43)
+	at org.tlauncher.skin.cape.TLSkinCape.event(TLSkinCape.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:637)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:754)
+	at net.minecraftforge.fml.server.FMLServerHandler.finishServerLoading(FMLServerHandler.java:108)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStarted(FMLCommonHandler.java:338)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:219)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.Minecraft
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 37 more
+Caused by: net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerException: Exception in class transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer@783ec989 from coremod FMLCorePlugin
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:260)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 39 more
+Caused by: java.lang.RuntimeException: Attempted to load class bib for invalid side SERVER
+	at net.minecraftforge.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:62)
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:256)
+	... 41 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_281, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 801493968 bytes (764 MB) / 3004170240 bytes (2865 MB) up to 3004170240 bytes (2865 MB)
+	JVM Flags: 2 total; -Xmx3072M -Xms3072M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2854 39 mods loaded, 39 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                         | Version                  | Source                                          | Signature                                |
+	|:----- |:-------------------------- |:------------------------ |:----------------------------------------------- |:---------------------------------------- |
+	| LCHIJ | minecraft                  | 1.12.2                   | minecraft.jar                                   | None                                     |
+	| LCHIJ | mcp                        | 9.42                     | minecraft.jar                                   | None                                     |
+	| LCHIJ | FML                        | 8.0.99.99                | forge-1.12.2-14.23.5.2854-universal.jar         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJ | forge                      | 14.23.5.2854             | forge-1.12.2-14.23.5.2854-universal.jar         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJ | foamfixcore                | 7.7.4                    | minecraft.jar                                   | None                                     |
+	| LCHIJ | codechickenlib             | 3.2.3.358                | CodeChickenLib-1.12.2-3.2.3.358-universal.jar   | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJ | ancientwarfare             | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJ | ancientwarfareautomation   | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJ | ancientwarfarenpc          | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJ | ancientwarfarestructure    | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJ | ancientwarfarevehicle      | 1.12.2-2.7.0.1032        | ancientwarfare-1.12.2-2.7.0.1032.jar            | None                                     |
+	| LCHIJ | antiqueatlas               | 4.6.3                    | antiqueatlas-1.12.2-4.6.3.jar                   | None                                     |
+	| LCHIJ | waystones                  | 4.1.0                    | Waystones_1.12.2-4.1.0.jar                      | None                                     |
+	| LCHIJ | atlasextras                | 1.8                      | AtlasExtras-1.12.2-1.8.jar                      | None                                     |
+	| LCHIJ | am                         | 1.0                      | Avatar+Armory+Mod+v1.1.3.jar                    | None                                     |
+	| LCHIJ | baubles                    | 1.5.2                    | Baubles-1.12-1.5.2.jar                          | None                                     |
+	| LCHIJ | betterbuilderswands        | 0.11.1                   | BetterBuildersWands-1.12-0.11.1.245+69d0d70.jar | None                                     |
+	| LCHIJ | bountifulbaubles           | 0.0.1                    | Bountiful+Baubles-1.12.2-0.1.5.jar              | None                                     |
+	| LCHIJ | jei                        | 4.16.1.301               | jei_1.12.2-4.16.1.301.jar                       | None                                     |
+	| LCHIJ | chisel                     | MC1.12.2-1.0.2.45        | Chisel-MC1.12.2-1.0.2.45.jar                    | None                                     |
+	| LCHIJ | clumps                     | 3.1.2                    | Clumps-3.1.2.jar                                | None                                     |
+	| LCHIJ | cosmeticarmorreworked      | 1.12.2-v5a               | CosmeticArmorReworked-1.12.2-v5a.jar            | aaaf83332a11df02406e9f266b1b65c1306f0f76 |
+	| LCHIJ | ebwizardry                 | 4.3.4                    | ElectroblobsWizardry-4.3.4-MC1.12.2.jar         | None                                     |
+	| LCHIJ | foamfix                    | 0.10.11-1.12.2           | foamfix-0.10.11-1.12.2.jar                      | None                                     |
+	| LCHIJ | grapplemod                 | 1.12.2-v11.1             | grapplemod-v11.1-1.12.2.jar                     | None                                     |
+	| LCHIJ | llibrary                   | 1.7.20                   | llibrary-1.7.20-1.12.2.jar                      | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| LCHIJ | iceandfire                 | 1.9.1                    | iceandfire-1.9.1-1.12.2.jar                     | None                                     |
+	| LCHIJ | infernalmobs               | 1.7.6                    | InfernalMobs-1.12.2.jar                         | None                                     |
+	| LCHIJ | inventorytweaks            | 1.63+release.109.220f184 | InventoryTweaks-1.63.jar                        | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+	| LCHIJ | lunatriuscore              | 1.2.0.42                 | LunatriusCore-1.12.2-1.2.0.42-universal.jar     | None                                     |
+	| LCHIJ | mowziesmobs                | 1.5.6                    | mowziesmobs-1.5.6.jar                           | None                                     |
+	| LCHIJ | multimob                   | 1.0.5                    | multimob-1.0.5.jar                              | None                                     |
+	| LCHIJ | potioncore                 | 1.9_for_1.12.2           | PotionCore-1.9_for_1.12.2.jar                   | None                                     |
+	| LCHIJ | primitivemobs              | 1.2.3a                   | primitivemobs-1.2.3a.jar                        | None                                     |
+	| LCHIJ | qualitytools               | 1.0.7_for_1.12.2         | QualityTools-1.0.7_for_1.12.2.jar               | None                                     |
+	| LCHIJ | schematica                 | 1.8.0.169                | Schematica-1.12.2-1.8.0.169-universal.jar       | None                                     |
+	| LCHIJ | stg                        | 1.12.2-1.2.3             | stg-1.12.2-1.2.3.jar                            | None                                     |
+	| LCHIE | tlauncher_custom_cape_skin | 1.4                      | tlskincape_1.12.2-1.4.jar                       | None                                     |
+	| LCHI  | travelersbackpack          | 1.0.35                   | TravelersBackpack-1.12.2-1.0.35.jar             | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  invtweaks.forge.asm.ContainerTransformer
+LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  lumien.resourceloader.asm.ClassTransformer
+Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.11-1.12.2.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  com.github.alexthe666.iceandfire.patcher.IceAndFireRuntimePatcher
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+TLSkinCapeHookLoader (tlskincape_1.12.2-1.4.jar)
+  gloomyfolken.hooklib.minecraft.PrimaryClassTransformer
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
